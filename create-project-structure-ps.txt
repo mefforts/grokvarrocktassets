@@ -1,0 +1,53 @@
+# Create GrokVarRock Project Structure
+
+# Create main directory
+New-Item -Path "grokvarrocktassets" -ItemType Directory -Force
+
+# Create directories
+$directories = @(
+    "public", 
+    "public\css", 
+    "public\js", 
+    "public\images",
+    "public\images\items",
+    "public\images\npcs",
+    "public\images\ui",
+    "server",
+    "server\db",
+    "server\db\models",
+    "server\routes",
+    "server\utils",
+    "data"
+)
+
+foreach ($dir in $directories) {
+    New-Item -Path "grokvarrocktassets\$dir" -ItemType Directory -Force
+}
+
+# Create empty files
+$files = @(
+    "public\css\main.css",
+    "public\css\mobile.css",
+    "public\js\game.js",
+    "public\js\questions.js",
+    "public\js\user.js",
+    "public\index.html",
+    "public\play.html",
+    "public\leaderboard.html",
+    "public\profile.html",
+    "server\db\index.js",
+    "server\routes\api.js",
+    "server\routes\auth.js",
+    "server\routes\pages.js",
+    "data\questions.json",
+    "data\levels.json",
+    "server.js",
+    "package.json",
+    "README.md"
+)
+
+foreach ($file in $files) {
+    New-Item -Path "grokvarrocktassets\$file" -ItemType File -Force
+}
+
+Write-Host "Project structure created successfully!" -ForegroundColor Green

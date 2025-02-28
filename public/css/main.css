@@ -1,0 +1,740 @@
+/* public/css/main.css */
+
+/* ---------- Variables ---------- */
+:root {
+    /* Colors - OSRS-themed */
+    --primary: #f5a623;         /* Gold/Yellow from OSRS interface */
+    --primary-dark: #d4881c;
+    --secondary: #4a90e2;       /* Blue from OSRS interface */
+    --secondary-dark: #3672b9;
+    --background: #2c2c2c;
+    --background-light: #3c3c3c;
+    --text: #f8f8f8;
+    --text-dark: #c0c0c0;
+    --success: #7ed321;
+    --error: #d0021b;
+    
+    /* Difficulty colors */
+    --beginner: #7fcdff;
+    --easy: #7ed321;
+    --medium: #f5a623;
+    --hard: #d0021b;
+    --elite: #9013fe;
+    --master: #000000;
+    
+    /* Fonts */
+    --main-font: 'Runescape', 'Roboto', sans-serif;
+    --header-font: 'Runescape Bold', 'Roboto', sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    
+    /* Border radius */
+    --border-radius: 4px;
+    
+    /* Box shadow */
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- Fonts ---------- */
+@font-face {
+    font-family: 'Runescape';
+    src: url('../fonts/runescape.woff2') format('woff2'),
+         url('../fonts/runescape.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Runescape Bold';
+    src: url('../fonts/runescape_bold.woff2') format('woff2'),
+         url('../fonts/runescape_bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* ---------- Reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--text);
+    background-color: var(--background);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- Background ---------- */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/ui/background.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+/* ---------- Typography ---------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font);
+    margin-bottom: var(--spacing-md);
+    color: var(--primary);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: var(--spacing-md);
+}
+
+a {
+    color: var(--secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+/* ---------- Layout ---------- */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: var(--spacing-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--primary);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: var(--spacing-md);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: var(--spacing-lg);
+}
+
+nav a {
+    color: var(--text);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius);
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+nav a.active {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+main {
+    flex: 1;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: var(--spacing-md);
+    text-align: center;
+    border-top: 2px solid var(--primary);
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+    display: inline-block;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-family: var(--main-font);
+    font-size: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary-dark);
+}
+
+.btn:disabled {
+    background-color: var(--background-light);
+    cursor: not-allowed;
+}
+
+.primary-btn {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+.secondary-btn {
+    background-color: var(--secondary);
+}
+
+.secondary-btn:hover {
+    background-color: var(--secondary-dark);
+}
+
+/* ---------- Forms ---------- */
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 1px solid var(--background-light);
+    border-radius: var(--border-radius);
+    background-color: var(--background-light);
+    color: var(--text);
+    font-family: var(--main-font);
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+/* ---------- Modal ---------- */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: var(--background);
+    margin: 10% auto;
+    padding: var(--spacing-lg);
+    border: 2px solid var(--primary);
+    border-radius: var(--border-radius);
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: var(--box-shadow);
+}
+
+.close {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-md);
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ---------- Tabs ---------- */
+.tabs {
+    display: flex;
+    margin-bottom: var(--spacing-lg);
+    border-bottom: 2px solid var(--background-light);
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    cursor: pointer;
+    font-family: var(--main-font);
+    font-size: 1rem;
+    color: var(--text);
+    transition: color 0.3s;
+}
+
+.tab-btn:hover {
+    color: var(--primary);
+}
+
+.tab-btn.active {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* ---------- Home Page ---------- */
+.hero {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    flex: 1;
+    min-width: 250px;
+    padding: var(--spacing-lg);
+    margin: var(--spacing-sm);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.feature-card img {
+    height: 80px;
+    margin-bottom: var(--spacing-md);
+}
+
+.how-to-play {
+    padding: var(--spacing-lg);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    margin-bottom: var(--spacing-lg);
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary);
+    color: var(--background);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: var(--spacing-md);
+}
+
+.step-text {
+    flex: 1;
+}
+
+.step-text h3 {
+    margin-bottom: var(--spacing-xs);
+}
+
+.login-prompt {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+/* ---------- Game Container ---------- */
+.game-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    box-shadow: var(--box-shadow);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.game-section {
+    display: none;
+}
+
+.game-section.active {
+    display: block;
+}
+
+/* ---------- Game Setup ---------- */
+.settings-container {
+    margin-bottom: var(--spacing-xl);
+}
+
+.setting-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.difficulty-selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.difficulty-option {
+    position: relative;
+    cursor: pointer;
+}
+
+.difficulty-option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.difficulty-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-sm);
+    border: 2px solid transparent;
+    border-radius: var(--border-radius);
+    transition: all 0.3s;
+}
+
+.difficulty-label img {
+    height: 60px;
+    margin-bottom: var(--spacing-xs);
+}
+
+.difficulty-option input:checked + .difficulty-label {
+    border-color: var(--primary);
+    background-color: rgba(245, 166, 35, 0.2);
+}
+
+.difficulty-label.beginner {
+    color: var(--beginner);
+}
+
+.difficulty-label.easy {
+    color: var(--easy);
+}
+
+.difficulty-label.medium {
+    color: var(--medium);
+}
+
+.difficulty-label.hard {
+    color: var(--hard);
+}
+
+.difficulty-label.elite {
+    color: var(--elite);
+}
+
+.difficulty-label.master {
+    color: var(--master);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- Game Play ---------- */
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.progress-container {
+    flex: 1;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: var(--background-light);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    margin-top: var(--spacing-xs);
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.difficulty-badge {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    background-color: var(--medium);
+}
+
+.difficulty-badge.beginner {
+    background-color: var(--beginner);
+    color: var(--background);
+}
+
+.difficulty-badge.easy {
+    background-color: var(--easy);
+    color: var(--background);
+}
+
+.difficulty-badge.medium {
+    background-color: var(--medium);
+    color: var(--background);
+}
+
+.difficulty-badge.hard {
+    background-color: var(--hard);
+    color: white;
+}
+
+.difficulty-badge.elite {
+    background-color: var(--elite);
+    color: white;
+}
+
+.difficulty-badge.master {
+    background-color: var(--master);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.question-container {
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: var(--border-radius);
+}
+
+.question-image {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.question-image img {
+    max-height: 150px;
+}
+
+.answers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.answer-btn {
+    padding: var(--spacing-md);
+    background-color: var(--background-light);
+    border: 2px solid var(--secondary);
+    border-radius: var(--border-radius);
+    color: var(--text);
+    font-family: var(--main-font);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.answer-btn:hover {
+    background-color: rgba(74, 144, 226, 0.2);
+}
+
+.answer-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.user-stats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-label {
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+.stat-value {
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+/* ---------- Feedback Modal ---------- */
+.feedback-result {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.result-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto var(--spacing-md);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-icon.correct {
+    background-color: rgba(126, 211, 33, 0.2);
+    border: 2px solid var(--success);
+}
+
+.result-icon.incorrect {
+    background-color: rgba(208, 2, 27, 0.2);
+    border: 2px solid var(--error);
+}
+
+.result-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.xp-gained {
+    font-size: 1.2rem;
+    color: var(--primary);
+    font-weight: bold;
+    margin-top: var(--spacing-md);
+}
+
+/* ---------- Game Results ---------- */
+.results-summary {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: var(--spacing-xl);
+}
+
+.result-stat {
+    text-align: center;
+}
+
+.result-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin: var(--spacing-sm) 0;
+}
+
+.result-label {
+    color: var(--text-dark);
+}
+
+.level-progress {
+    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-md);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: var(--border-radius);
+}
+
+.level-info {
+    text-align: center;
+}
+
+.level-number {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: var(--spacing-sm);
+}
+
+.level-bar {
+    height: 20px;
+    background-color: var(--background-light);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    margin-bottom: var(--spacing-sm);
+}
+
+.level-fill {
+    height: 100%;
+    background-color: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.xp-info {
+    color: var(--text-dark);
+}
+
+.level-info.not-logged-in {
+    padding: var(--spacing-md);
+}
+
+.results-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play OSRS Trivia</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 768px)">
+    <link rel="icon" href="images/ui/clue_scroll.png">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <header>
+        <div class="logo">
+            <img src="images/ui/clue_scroll.png" alt="OSRS Trivia">
+            <h1>OSRS Trivia</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/play" class="active">Play</a></li>
+                <li><a href="/leaderboard">Leaderboard</a></li>
+                <li id="profile-link" style="display: none;"><a href="/profile">Profile</a></li>
+                <li id="login-register"><a href="#" id="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="game-container">
+            <!-- Game setup section - shown before starting the game -->
+            <section id="game-setup" class="game-section active">
+                <h2>Choose Your Challenge</h2>
+                
+                <div class="settings-container">
+                    <div class="setting-group">
+                        <h3>Difficulty</h3>
+                        <div class="difficulty-selection">
+                            <label class="difficulty-option">
+                                <input type="radio" name="difficulty" value="Beginner" checked>
+                                <span class="difficulty-label beginner">
+                                    <img src="images/ui/beginner_clue.png" alt="Beginner">
+                                    <span>Beginner</span>
+                                </span>
+                            </label>
+                            <label class="difficulty-option">
+                                <input type="radio" name="difficulty" value="Easy">
+                                <span class="difficulty-label easy">
+                                    <img src="images/ui/easy_clue.png" alt="Easy">
+                                    <span>Easy</span>
+                                </span>
+                            </label>
+                            <label class="difficulty-option">
+                                <input type="radio" name="difficulty" value="Medium">
+                                <span class="difficulty-label medium">
+                                    <img src="images/ui/medium_clue.png" alt="Medium">
+                                    <span>Medium</span>
+                                </span>
+                            </label>
+                            <label class="difficulty-option">
+                                <input type="radio" name="difficulty" value="Hard">
+                                <span class="difficulty-label hard">
+                                    <img src="images/ui/hard_clue.png" alt="Hard">
+                                    <span>Hard</span>
+                                </span>
+                            </label>
+                            <label class="difficulty-option">
+                                <input type="radio" name="difficulty" value="Elite">
+                                <span class="difficulty-label elite">
+                                    <img src="images/ui/elite_clue.png" alt="Elite">
+                                    <span>Elite</span>
+                                </span>
+                            </label>
+                            <label class="difficulty-option">
+                                <input type="radio" name="difficulty" value="Master">
+                                <span class="difficulty-label master">
+                                    <img src="images/ui/master_clue.png" alt="Master">
+                                    <span>Master</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="setting-group">
+                        <h3>Category</h3>
+                        <select id="category-select">
+                            <option value="">All Categories</option>
+                            <option value="Items">Items</option>
+                            <option value="NPCs">NPCs</option>
+                            <option value="Locations">Locations</option>
+                            <option value="Quests">Quests</option>
+                            <option value="Skills">Skills</option>
+                            <option value="Lore">Lore</option>
+                        </select>
+                    </div>
+                    
+                    <div class="setting-group">
+                        <h3>Number of Questions</h3>
+                        <select id="question-count">
+                            <option value="5">5 questions</option>
+                            <option value="10" selected>10 questions</option>
+                            <option value="20">20 questions</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button id="start-game" class="btn primary-btn">Start Game</button>
+                
+                <div class="login-prompt" id="login-prompt">
+                    <p>Login to track your progress and compete on the leaderboard!</p>
+                    <button id="prompt-login-btn" class="btn secondary-btn">Login / Register</button>
+                </div>
+            </section>
+            
+            <!-- Game play section - shown during the game -->
+            <section id="game-play" class="game-section">
+                <div class="game-header">
+                    <div class="progress-container">
+                        <span id="question-counter">Question 1 of 10</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 10%"></div>
+                        </div>
+                    </div>
+                    <div class="difficulty-badge" id="current-difficulty">
+                        Medium
+                    </div>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question-image" id="question-image">
+                        <img src="images/items/dragon_scimitar.png" alt="Question Image">
+                    </div>
+                    
+                    <h3 id="question-text">What Attack level is required to wield a Dragon Scimitar?</h3>
+                    
+                    <div class="answers-container" id="answers-container">
+                        <!-- Answer options will be generated by JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="user-stats">
+                    <div class="stat">
+                        <span class="stat-label">Score:</span>
+                        <span class="stat-value" id="current-score">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Streak:</span>
+                        <span class="stat-value" id="current-streak">0</span>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Results section - shown after completing all questions -->
+            <section id="game-results" class="game-section">
+                <h2>Quiz Complete!</h2>
+                
+                <div class="results-summary">
+                    <div class="result-stat">
+                        <div class="result-icon">
+                            <img src="images/ui/xp_orb.png" alt="Score">
+                        </div>
+                        <div class="result-value" id="final-score">7/10</div>
+                        <div class="result-label">Correct Answers</div>
+                    </div>
+                    
+                    <div class="result-stat">
+                        <div class="result-icon">
+                            <img src="images/ui/xp_lamp.png" alt="XP">
+                        </div>
+                        <div class="result-value" id="xp-gained">+350 XP</div>
+                        <div class="result-label">Experience Gained</div>
+                    </div>
+                </div>
+                
+                <div class="level-progress" id="level-progress">
+                    <div class="level-info">
+                        <span class="level-number">Level 5</span>
+                        <div class="level-bar">
+                            <div class="level-fill" style="width: 35%"></div>
+                        </div>
+                        <span class="xp-info">1250 / 3500 XP to level 6</span>
+                    </div>
+                </div>
+                
+                <div class="results-buttons">
+                    <button id="play-again" class="btn primary-btn">Play Again</button>
+                    <button id="view-leaderboard" class="btn secondary-btn">View Leaderboard</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Answer Feedback Modal -->
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <div id="feedback-correct" class="feedback-result">
+                <div class="result-icon correct">
+                    <img src="images/ui/correct_icon.png" alt="Correct">
+                </div>
+                <h3>Correct!</h3>
+                <p id="correct-answer-text">The Attack level required is 60.</p>
+                <p class="xp-gained">+<span id="xp-amount">50</span> XP</p>
+            </div>
+            
+            <div id="feedback-incorrect" class="feedback-result">
+                <div class="result-icon incorrect">
+                    <img src="images/ui/incorrect_icon.png" alt="Incorrect">
+                </div>
+                <h3>Incorrect</h3>
+                <p>The correct answer is: <span id="correct-answer">60</span></p>
+                <p id="explanation-text">Dragon weapons generally require 60 Attack to wield.</p>
+            </div>
+            
+            <button id="next-question" class="btn primary-btn">Next Question</button>
+        </div>
+    </div>
+    
+    <!-- Login/Register Modal (same as in index.html) -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="login">Login</button>
+                <button class="tab-btn" data-tab="register">Register</button>
+            </div>
+            
+            <div id="login-tab" class="tab-content active">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Login</button>
+                </form>
+            </div>
+            
+            <div id="register-tab" class="tab-content">
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="register-username">Username</label>
+                        <input type="text" id="register-username" required minlength="3" maxlength="20">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Password</label>
+                        <input type="password" id="register-password" required minlength="6">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm">Confirm Password</label>
+                        <input type="password" id="register-confirm" required>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 OSRS Trivia. This is a fan-made project not affiliated with Jagex.</p>
+    </footer>
+    
+    <script src="js/auth.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

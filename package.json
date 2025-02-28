@@ -1,0 +1,39 @@
+{
+    "name": "osrs-trivia-game",
+    "version": "1.0.0",
+    "description": "A trivia game based on Old School RuneScape knowledge",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "nodemon server.js",
+        "import-questions": "node scripts/importQuestions.js",
+        "import-questions-text": "node scripts/importQuestions.js --text",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "osrs",
+        "runescape",
+        "trivia",
+        "game",
+        "quiz"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "express": "^4.21.2",
+        "jsonwebtoken": "^9.0.2",
+        "mongodb": "^6.13.1",
+        "mongoose": "^7.8.6",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.9"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "type": "commonjs"
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSRS Trivia - Test Your RuneScape Knowledge</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 768px)">
+    <link rel="icon" href="images/ui/clue_scroll.png">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <header>
+        <div class="logo">
+            <img src="images/ui/clue_scroll.png" alt="OSRS Trivia">
+            <h1>OSRS Trivia</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/play">Play</a></li>
+                <li><a href="/leaderboard">Leaderboard</a></li>
+                <li id="profile-link" style="display: none;"><a href="/profile">Profile</a></li>
+                <li id="login-register"><a href="#" id="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Test Your Old School RuneScape Knowledge</h2>
+                <p>Answer trivia questions, gain experience, and climb to level 99!</p>
+                <a href="/play" class="btn primary-btn">Start Playing</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/ui/wise_old_man.png" alt="Wise Old Man">
+            </div>
+        </section>
+        
+        <section class="features">
+            <div class="feature-card">
+                <img src="images/ui/beginner_clue.png" alt="Difficulty Levels">
+                <h3>6 Difficulty Levels</h3>
+                <p>From Beginner to Master, just like clue scrolls!</p>
+            </div>
+            <div class="feature-card">
+                <img src="images/ui/xp_lamp.png" alt="XP System">
+                <h3>OSRS XP System</h3>
+                <p>Gain XP and level up following the same curve as OSRS.</p>
+            </div>
+            <div class="feature-card">
+                <img src="images/ui/treasure_trail.png" alt="Categories">
+                <h3>Various Categories</h3>
+                <p>Questions about items, NPCs, locations, quests and more!</p>
+            </div>
+        </section>
+        
+        <section class="how-to-play">
+            <h2>How to Play</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-text">
+                        <h3>Sign Up</h3>
+                        <p>Create an account to track your progress and compete on the leaderboard.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-text">
+                        <h3>Choose Difficulty</h3>
+                        <p>Start with Beginner questions and work your way up to Master level.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-text">
+                        <h3>Answer Questions</h3>
+                        <p>Test your OSRS knowledge and gain XP for correct answers.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-text">
+                        <h3>Level Up</h3>
+                        <p>Reach level 99 and show off your OSRS expertise!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Login/Register Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="login">Login</button>
+                <button class="tab-btn" data-tab="register">Register</button>
+            </div>
+            
+            <div id="login-tab" class="tab-content active">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Login</button>
+                </form>
+            </div>
+            
+            <div id="register-tab" class="tab-content">
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="register-username">Username</label>
+                        <input type="text" id="register-username" required minlength="3" maxlength="20">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Password</label>
+                        <input type="password" id="register-password" required minlength="6">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm">Confirm Password</label>
+                        <input type="password" id="register-confirm" required>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 OSRS Trivia. This is a fan-made project not affiliated with Jagex.</p>
+    </footer>
+    
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

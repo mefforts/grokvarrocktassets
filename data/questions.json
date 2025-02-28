@@ -1,0 +1,135 @@
+// data/questions.json
+[
+    {
+      "text": "What Attack level is required to wear Adamant Weaponry?",
+      "answers": ["30", "25", "40", "35"],
+      "correctAnswer": "30",
+      "difficulty": "Beginner",
+      "category": "Items",
+      "area": "Combat",
+      "imageUrl": "/images/items/adamant_scimitar.png",
+      "explanation": "Adamant weaponry requires 30 Attack to wield.",
+      "xpReward": 10
+    },
+    {
+      "text": "What Thieving level is required to pickpocket Master Farmers?",
+      "answers": ["38", "40", "35", "45"],
+      "correctAnswer": "38",
+      "difficulty": "Beginner",
+      "category": "Skills",
+      "area": "Thieving",
+      "imageUrl": "/images/npcs/master_farmer.png",
+      "explanation": "You need level 38 Thieving to pickpocket Master Farmers.",
+      "xpReward": 10
+    },
+    {
+      "text": "What is the name of the quest that awards the Ghostspeak Amulet?",
+      "answers": ["The Restless Ghost", "Ghosts Ahoy", "Creature of Fenkenstrain", "Spirit of the Elid"],
+      "correctAnswer": "The Restless Ghost",
+      "difficulty": "Easy",
+      "category": "Quests",
+      "area": "Lumbridge",
+      "imageUrl": "/images/items/ghostspeak_amulet.png",
+      "explanation": "The Restless Ghost is a novice quest that awards the Ghostspeak Amulet, allowing players to talk to ghosts.",
+      "xpReward": 25
+    },
+    {
+      "text": "What is the name of the quest that unlocks the Herblore Skill?",
+      "answers": ["Druidic Ritual", "Jungle Potion", "Eadgar's Ruse", "The Dig Site"],
+      "correctAnswer": "Druidic Ritual",
+      "difficulty": "Easy",
+      "category": "Quests",
+      "area": "Taverley",
+      "imageUrl": "/images/skills/herblore.png",
+      "explanation": "Druidic Ritual is required to start training the Herblore skill.",
+      "xpReward": 25
+    },
+    {
+      "text": "What is the name of the Magic and Academia zone of Zeah?",
+      "answers": ["Arceuus", "Lovakengj", "Hosidius", "Piscarilius"],
+      "correctAnswer": "Arceuus",
+      "difficulty": "Medium",
+      "category": "Locations",
+      "area": "Great Kourend",
+      "imageUrl": "/images/locations/arceuus.png",
+      "explanation": "Arceuus is the house in Great Kourend that specializes in magic and academia.",
+      "xpReward": 50
+    },
+    {
+      "text": "What is the name of the Fairy Slayer Master?",
+      "answers": ["Chaeldar", "Nieve", "Duradel", "Konar"],
+      "correctAnswer": "Chaeldar",
+      "difficulty": "Medium",
+      "category": "NPCs",
+      "area": "Zanaris",
+      "imageUrl": "/images/npcs/chaeldar.png",
+      "explanation": "Chaeldar is the fairy Slayer Master located in Zanaris who requires 70 Combat to use.",
+      "xpReward": 50
+    },
+    {
+      "text": "What was the name of Glough's girlfriend?",
+      "answers": ["Anita", "Aluft", "Glaisel", "Aemad"],
+      "correctAnswer": "Anita",
+      "difficulty": "Hard",
+      "category": "NPCs",
+      "area": "Tree Gnome Stronghold",
+      "imageUrl": "/images/npcs/anita.png",
+      "explanation": "Anita was Glough's girlfriend as revealed during the Monkey Madness questline.",
+      "xpReward": 100
+    },
+    {
+      "text": "What is the name of the lighthouse keeper?",
+      "answers": ["Jossik", "Larrissa", "Silas", "Gunnjorn"],
+      "correctAnswer": "Jossik",
+      "difficulty": "Hard",
+      "category": "NPCs",
+      "area": "Fremennik Province",
+      "imageUrl": "/images/npcs/jossik.png",
+      "explanation": "Jossik is the lighthouse keeper who replaced his uncle Silas after the events of Horror from the Deep.",
+      "xpReward": 100
+    },
+    {
+      "text": "Who was the Elven Traitor from the Plague Series?",
+      "answers": ["Lord Iorwerth", "King Lathas", "Lord Crwys", "Arianwyn"],
+      "correctAnswer": "Lord Iorwerth",
+      "difficulty": "Elite",
+      "category": "NPCs",
+      "area": "Elven Lands",
+      "imageUrl": "/images/npcs/lord_iorwerth.png",
+      "explanation": "Lord Iorwerth betrayed the elven clans to pursue his own goals during the plague series quests.",
+      "xpReward": 200
+    },
+    {
+      "text": "What is the only item in the game to offer a negative Prayer Bonus?",
+      "answers": ["Ancient Staff", "Dragonbone Necklace", "Spined Helm", "Black Demon Mask"],
+      "correctAnswer": "Ancient Staff",
+      "difficulty": "Elite",
+      "category": "Items",
+      "area": "Magic",
+      "imageUrl": "/images/items/ancient_staff.png",
+      "explanation": "The Ancient Staff is the only item in OSRS that gives a negative Prayer bonus (-1).",
+      "xpReward": 200
+    },
+    {
+      "text": "What were Nieve's last words?",
+      "answers": ["He has the Mutagen! We have to stop him!", "Protect Steve at all costs!", "The cave is collapsing!", "Save yourselves!"],
+      "correctAnswer": "He has the Mutagen! We have to stop him!",
+      "difficulty": "Master",
+      "category": "NPCs",
+      "area": "Slayer",
+      "imageUrl": "/images/npcs/nieve.png",
+      "explanation": "These were Nieve's last words during the Monkey Madness II quest before her death.",
+      "xpReward": 500
+    },
+    {
+      "text": "What Gnomish Delicacy became a high-end currency during RuneScape's infamous trade restrictions?",
+      "answers": ["Mint Cake", "Toad Crunchies", "Worm Crunchies", "Blurberry Special"],
+      "correctAnswer": "Mint Cake",
+      "difficulty": "Master",
+      "category": "Items",
+      "area": "History",
+      "imageUrl": "/images/items/mint_cake.png",
+      "explanation": "The Gnome Mint Cake was used as a high-value currency during the trade restrictions era because of its high value and stackability.",
+      "xpReward": 500
+    }
+  ]

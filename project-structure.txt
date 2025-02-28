@@ -1,0 +1,32 @@
+grokvarrocktassets/
+├── public/               # Static files
+│   ├── css/              # Stylesheets
+│   │   ├── main.css      # Main styling
+│   │   └── mobile.css    # Mobile-specific styling
+│   ├── js/               # Client-side JavaScript
+│   │   ├── game.js       # Game logic
+│   │   ├── questions.js  # Question handling
+│   │   └── user.js       # User progress tracking
+│   ├── images/           # Game images
+│   │   ├── items/        # OSRS item images
+│   │   ├── npcs/         # OSRS NPC images
+│   │   └── ui/           # UI elements
+│   ├── index.html        # Landing page
+│   ├── play.html         # Main game interface
+│   ├── leaderboard.html  # Leaderboard page
+│   └── profile.html      # User profile page
+├── server/               # Server-side code
+│   ├── db/               # Database models and connection
+│   │   ├── models/       # Database schemas
+│   │   └── index.js      # Database connection
+│   ├── routes/           # API routes
+│   │   ├── api.js        # API endpoints
+│   │   ├── auth.js       # Authentication routes
+│   │   └── pages.js      # Page routes
+│   └── utils/            # Utility functions
+├── data/                 # Game data
+│   ├── questions.json    # Question database
+│   └── levels.json       # XP requirements per level
+├── server.js             # Main server file
+├── package.json          # Node.js dependencies
+└── README.md             # Project documentation

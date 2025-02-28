@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSRS Trivia - Your Profile</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 768px)">
+    <link rel="icon" href="images/ui/clue_scroll.png">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <header>
+        <div class="logo">
+            <img src="images/ui/clue_scroll.png" alt="OSRS Trivia">
+            <h1>OSRS Trivia</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/play">Play</a></li>
+                <li><a href="/leaderboard">Leaderboard</a></li>
+                <li id="profile-link"><a href="/profile" class="active">Profile</a></li>
+                <li id="login-register"><a href="#" id="logout-btn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="profile-container">
+            <div class="profile-header">
+                <h2>Your Profile</h2>
+                <div class="quick-stats">
+                    <div class="quick-stat">
+                        <div class="stat-icon">
+                            <img src="images/ui/level_icon.png" alt="Level">
+                        </div>
+                        <div class="stat-value" id="user-level">5</div>
+                        <div class="stat-label">Level</div>
+                    </div>
+                    <div class="quick-stat">
+                        <div class="stat-icon">
+                            <img src="images/ui/xp_icon.png" alt="XP">
+                        </div>
+                        <div class="stat-value" id="user-xp">1,250</div>
+                        <div class="stat-label">Total XP</div>
+                    </div>
+                    <div class="quick-stat">
+                        <div class="stat-icon">
+                            <img src="images/ui/questions_icon.png" alt="Questions">
+                        </div>
+                        <div class="stat-value" id="questions-answered">42</div>
+                        <div class="stat-label">Questions</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profile-sections">
+                <div class="profile-section">
+                    <h3>Progress</h3>
+                    <div class="level-progress" id="level-progress">
+                        <div class="level-info">
+                            <span class="level-number">Level 5</span>
+                            <div class="level-bar">
+                                <div class="level-fill" style="width: 35%"></div>
+                            </div>
+                            <span class="xp-info">1,250 / 3,500 XP to level 6</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-item-label">Questions Answered:</span>
+                            <span class="stat-item-value" id="total-questions">42</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-item-label">Correct Answers:</span>
+                            <span class="stat-item-value" id="correct-answers">36</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-item-label">Accuracy Rate:</span>
+                            <span class="stat-item-value" id="accuracy-rate">85.7%</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-item-label">Best Streak:</span>
+                            <span class="stat-item-value" id="best-streak">12</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-item-label">Current Streak:</span>
+                            <span class="stat-item-value" id="current-streak">3</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-item-label">Member Since:</span>
+                            <span class="stat-item-value" id="member-since">Feb 27, 2025</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profile-section">
+                    <h3>Difficulty Breakdown</h3>
+                    <div class="difficulty-stats" id="difficulty-stats">
+                        <!-- Will be populated by JavaScript -->
+                        <div class="difficulty-loading">Loading difficulty stats...</div>
+                    </div>
+                </div>
+                
+                <div class="profile-section">
+                    <h3>Category Mastery</h3>
+                    <div class="category-stats" id="category-stats">
+                        <!-- Will be populated by JavaScript -->
+                        <div class="category-loading">Loading category stats...</div>
+                    </div>
+                </div>
+                
+                <div class="profile-section">
+                    <h3>Recent Activity</h3>
+                    <div class="recent-activity" id="recent-activity">
+                        <!-- Will be populated by JavaScript -->
+                        <div class="activity-loading">Loading recent activity...</div>
+                    </div>
+                </div>
+                
+                <div class="profile-section">
+                    <h3>Account Settings</h3>
+                    <form id="settings-form">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" disabled>
+                            <small>Username cannot be changed</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" id="change-password-btn" class="btn secondary-btn">Change Password</button>
+                        </div>
+                        <div id="password-change-fields" style="display: none;">
+                            <div class="form-group">
+                                <label for="current-password">Current Password</label>
+                                <input type="password" id="current-password">
+                            </div>
+                            <div class="form-group">
+                                <label for="new-password">New Password</label>
+                                <input type="password" id="new-password" minlength="6">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-password">Confirm New Password</label>
+                                <input type="password" id="confirm-password">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 OSRS Trivia. This is a fan-made project not affiliated with Jagex.</p>
+    </footer>
+    
+    <script src="js/auth.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>

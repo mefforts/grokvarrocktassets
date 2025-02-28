@@ -1,0 +1,145 @@
+# OSRS Trivia Game Deployment Guide
+
+This guide will walk you through deploying the OSRS Trivia Game step-by-step, even if you have little to no experience with web development.
+
+## Prerequisites
+
+Before you begin, you'll need:
+
+1. A GitHub account (free) - To store your code
+2. A MongoDB Atlas account (free tier) - For the database
+3. A Heroku account (free tier) - For hosting the application
+
+## Step 1: Set Up GitHub Repository
+
+1. Go to [GitHub](https://github.com/) and sign in (or create an account)
+2. Click the "+" icon in the top-right corner and select "New repository"
+3. Name your repository (e.g., "osrs-trivia-game")
+4. Make it "Public" and click "Create repository"
+5. Follow the instructions on the next page to upload the code (we'll do this later)
+
+## Step 2: Set Up MongoDB Atlas Database
+
+1. Go to [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) and sign up for a free account
+2. Once signed in, click "Create" to make a new project
+3. Name your project (e.g., "OSRS Trivia") and click "Next"
+4. You can skip adding members by clicking "Create Project"
+5. Click "Build a Database" and select the "FREE" option
+6. Choose your preferred provider (AWS, Google Cloud, or Azure) and region (pick one close to you)
+7. Click "Create Cluster" (this will take a few minutes)
+8. Once your cluster is ready, click "Connect"
+9. Click "Add Your Current IP Address" to add your IP to the allowlist
+10. Create a database user by entering a username and password - **IMPORTANT**: Remember these credentials!
+11. Click "Choose a connection method"
+12. Select "Connect your application"
+13. Copy the connection string - You'll need to replace `<password>` with your actual password later
+
+mongodb+srv://bradtpr:<db_password>@projectvarrocktassets.8zpzj.mongodb.net/?retryWrites=true&w=majority&appName=projectVarrockTassets
+
+## Step 3: Prepare Your Code for Deployment
+
+1. In your downloaded code, create a file named `.env` in the root directory
+2. Add the following lines to the `.env` file:
+
+```
+MONGODB_URI=your_mongodb_connection_string_from_step_2
+JWT_SECRET=a_random_string_for_security
+PORT=3000
+NODE_ENV=production
+```
+
+3. Replace `your_mongodb_connection_string_from_step_2` with the connection string from MongoDB Atlas
+4. Replace `a_random_string_for_security` with a random string (e.g., "osrs-trivia-super-secret-key-123")
+
+## Step 4: Set Up Heroku for Deployment
+
+1. Go to [Heroku](https://www.heroku.com/) and sign up for a free account
+2. Once signed in, click the "New" button and select "Create new app"
+3. Enter an app name (must be unique, e.g., "osrs-trivia-game-yourusername")
+4. Choose a region close to you and click "Create app"
+5. On the next page, go to the "Settings" tab
+6. Scroll down to "Config Vars" and click "Reveal Config Vars"
+7. Add the same environment variables from your `.env` file:
+   - KEY: `MONGODB_URI`, VALUE: Your MongoDB connection string
+   - KEY: `JWT_SECRET`, VALUE: Your secret key
+   - KEY: `NODE_ENV`, VALUE: `production`
+8. Scroll down to "Buildpacks" and click "Add buildpack"
+9. Select "nodejs" and click "Save changes"
+
+## Step 5: Deploy Your Code to Heroku
+
+There are two ways to deploy: using Heroku CLI (Command Line Interface) or connecting to GitHub. We'll use the GitHub method as it's easier for beginners.
+
+1. In Heroku, go to the "Deploy" tab
+2. In the "Deployment method" section, click "GitHub"
+3. Connect your GitHub account if prompted
+4. Search for your repository name and click "Connect"
+5. Scroll down to "Manual deploy" section
+6. Select the "main" branch and click "Deploy Branch"
+7. Wait for the deployment to complete (you'll see "Your app was successfully deployed")
+8. Click "View" to see your deployed application!
+
+## Step 6: Import Initial Questions
+
+After deploying, you need to import the sample questions:
+
+1. Go to your Heroku dashboard
+2. Click on your app
+3. Click the "More" button in the top-right corner
+4. Select "Run console"
+5. Enter: `node scripts/importQuestions.js`
+6. Press "Run"
+7. Wait for the script to complete
+
+## Step 7: Test Your Deployed Application
+
+1. Click the "Open app" button in Heroku to visit your deployed application
+2. Test the registration and login functionality
+3. Try playing a trivia game to make sure everything works
+4. Check the leaderboard and profile pages
+
+## Troubleshooting Common Issues
+
+### Application crashes or shows "Application Error"
+
+1. In Heroku, go to "More" > "View logs"
+2. Look for error messages to identify the problem
+3. Common issues include:
+   - Incorrect MongoDB connection string
+   - Missing environment variables
+   - Syntax errors in the code
+
+### Database connection issues
+
+1. Check that your MongoDB Atlas cluster is running
+2. Verify that your IP address is in the allowlist
+3. Make sure your database username and password are correct in the connection string
+
+### Questions not appearing
+
+1. Make sure you've run the import script (Step 6)
+2. Check the Heroku logs for any errors during import
+
+## Updating Your Application
+
+If you make changes to the code:
+
+1. Make your changes locally
+2. Commit them to GitHub
+3. In Heroku, go to the "Deploy" tab
+4. Scroll down to "Manual deploy" and click "Deploy Branch" again
+
+## Custom Domain (Optional)
+
+If you want to use a custom domain instead of the default Heroku URL:
+
+1. Purchase a domain from a registrar like Namecheap or GoDaddy
+2. In Heroku, go to the "Settings" tab
+3. Scroll down to "Domains" and click "Add domain"
+4. Follow the instructions to set up DNS records with your domain provider
+
+## Conclusion
+
+Congratulations! You've successfully deployed your OSRS Trivia Game. Your application is now live on the internet and can be accessed by anyone with the URL.
+
+If you encounter any issues during deployment, refer to the [Heroku documentation](https://devcenter.heroku.com/categories/reference) or [MongoDB Atlas documentation](https://docs.atlas.mongodb.com/) for more detailed help.

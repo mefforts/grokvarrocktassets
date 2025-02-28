@@ -1,0 +1,109 @@
+/* public/css/mobile.css */
+/* Mobile styles for screens under 768px */
+
+/* ---------- Header ---------- */
+header {
+    flex-direction: column;
+    padding: var(--spacing-sm);
+}
+
+.logo {
+    margin-bottom: var(--spacing-md);
+}
+
+nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: var(--spacing-xs) var(--spacing-sm);
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-content {
+    margin-bottom: var(--spacing-lg);
+}
+
+/* ---------- Features ---------- */
+.features {
+    flex-direction: column;
+}
+
+.feature-card {
+    width: 100%;
+    margin-bottom: var(--spacing-md);
+}
+
+/* ---------- How to Play ---------- */
+.steps {
+    flex-direction: column;
+}
+
+.step {
+    width: 100%;
+}
+
+/* ---------- Game Setup ---------- */
+.difficulty-selection {
+    justify-content: center;
+}
+
+.difficulty-option {
+    width: 30%;
+    margin-bottom: var(--spacing-md);
+}
+
+.difficulty-label img {
+    height: 40px;
+}
+
+/* ---------- Game Play ---------- */
+.game-header {
+    flex-direction: column;
+}
+
+.progress-container {
+    width: 100%;
+    margin-bottom: var(--spacing-md);
+}
+
+.difficulty-badge {
+    align-self: flex-start;
+}
+
+.answers-container {
+    grid-template-columns: 1fr;
+}
+
+/* ---------- Results ---------- */
+.results-summary {
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.results-buttons {
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+/* ---------- Modal ---------- */
+.modal-content {
+    width: 95%;
+    margin: 5% auto;
+    padding: var(--spacing-md);
+}
+
+/* ---------- Auth Forms ---------- */
+.form-group {
+    margin-bottom: var(--spacing-sm);
+}
+
+input, select, textarea {
+    padding: var(--spacing-xs);
+}
