@@ -1,10 +1,11 @@
-// server/db/index.js
+// server/db/db-connection.js
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 const connectDB = async () => {
   try {
-    // Use environment variable for MongoDB URI in production, fallback to local for development
-    const conn = await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/osrs-trivia', {
+    // Use MongoDB Atlas URI from environment variables
+    const conn = await mongoose.connect(process.env.MONGODB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true
     });

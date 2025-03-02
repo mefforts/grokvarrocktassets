@@ -1,8 +1,9 @@
 // server/middleware/auth.js
 const jwt = require('jsonwebtoken');
+require('dotenv').config();
 
 // JWT secret key - should be in environment variable in production
-const JWT_SECRET = 'your_jwt_secret_key';
+const JWT_SECRET = process.env.JWT_SECRET;
 
 module.exports = function(req, res, next) {
   // Get token from header

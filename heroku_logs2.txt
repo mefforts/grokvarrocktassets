@@ -1,0 +1,100 @@
+2025-03-02T16:12:47.141428+00:00 heroku[router]: at=info method=GET path="/images/ui/xp_lamp.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=913dcea3-38fe-482b-8a57-4b9694b02a02 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=200 bytes=6551 protocol=https
+2025-03-02T16:12:47.208051+00:00 app[web.1]: [0mGET /images/ui/treasure_trail.png [32m200[0m 1.923 ms - 6229[0m
+2025-03-02T16:12:47.208086+00:00 heroku[router]: at=info method=GET path="/images/ui/treasure_trail.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=b8e8b402-2cb9-498d-a9a8-0053232645e5 fwd="143.109.189.141" dyno=web.1 connect=0ms service=3ms status=200 bytes=6551 protocol=https
+2025-03-02T16:12:47.208967+00:00 app[web.1]: [0mGET /js/main.js [32m200[0m 1.849 ms - 6229[0m
+2025-03-02T16:12:47.209209+00:00 heroku[router]: at=info method=GET path="/js/main.js" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=c2af0edb-a101-4c29-96df-fad669c32d00 fwd="143.109.189.141" dyno=web.1 connect=0ms service=3ms status=200 bytes=6551 protocol=https
+2025-03-02T16:12:47.216047+00:00 app[web.1]: [0mGET /css/mobile.css [32m200[0m 0.503 ms - 1732[0m
+2025-03-02T16:12:47.216261+00:00 heroku[router]: at=info method=GET path="/css/mobile.css" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=dd756d83-a6d9-46e0-917c-353770715153 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=200 bytes=2052 protocol=https
+2025-03-02T16:12:47.283963+00:00 app[web.1]: [0mGET /images/ui/background.jpg [32m200[0m 0.663 ms - 6229[0m
+2025-03-02T16:12:47.284503+00:00 heroku[router]: at=info method=GET path="/images/ui/background.jpg" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=d2d19766-bb56-4cc8-9953-62c0d68d245d fwd="143.109.189.141" dyno=web.1 connect=0ms service=2ms status=200 bytes=6551 protocol=https
+2025-03-02T16:12:47.306146+00:00 app[web.1]: [0mGET /fonts/runescape.woff2 [32m200[0m 1.425 ms - 6229[0m
+2025-03-02T16:12:47.306402+00:00 heroku[router]: at=info method=GET path="/fonts/runescape.woff2" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=e8b2975c-aabd-45ed-b670-73fed6c37749 fwd="143.109.189.141" dyno=web.1 connect=0ms service=2ms status=200 bytes=6551 protocol=https
+2025-03-02T16:12:47.306689+00:00 app[web.1]: [0mGET /fonts/runescape_bold.woff2 [32m200[0m 1.482 ms - 6229[0m
+2025-03-02T16:12:47.306914+00:00 heroku[router]: at=info method=GET path="/fonts/runescape_bold.woff2" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=dc4dcac5-074f-4828-b826-bb7188e19504 fwd="143.109.189.141" dyno=web.1 connect=0ms service=2ms status=200 bytes=6551 protocol=https
+2025-03-02T16:12:47.382660+00:00 app[web.1]: [0mGET /fonts/runescape_bold.woff [32m200[0m 1.399 ms - 6229[0m
+2025-03-02T16:12:47.382902+00:00 heroku[router]: at=info method=GET path="/fonts/runescape_bold.woff" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=f0daef80-0a27-4afb-b4d6-da7689fadd0d fwd="143.109.189.141" dyno=web.1 connect=0ms service=2ms status=200 bytes=6551 protocol=https
+2025-03-02T16:12:47.383200+00:00 app[web.1]: [0mGET /fonts/runescape.woff [32m200[0m 1.257 ms - 6229[0m
+2025-03-02T16:12:47.383356+00:00 heroku[router]: at=info method=GET path="/fonts/runescape.woff" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=2a3dd8d2-0670-4e2a-aa96-f12e5c4c7c5b fwd="143.109.189.141" dyno=web.1 connect=0ms service=2ms status=200 bytes=6551 protocol=https
+2025-03-02T16:12:47.459345+00:00 app[web.1]: [0mGET /images/ui/clue_scroll.png [36m304[0m 0.733 ms - -[0m
+2025-03-02T16:12:47.459480+00:00 heroku[router]: at=info method=GET path="/images/ui/clue_scroll.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=34702a89-7f3b-4803-abca-614f4d52ebab fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:00.453218+00:00 app[web.1]: [0mGET /play [32m200[0m 6.672 ms - 12960[0m
+2025-03-02T16:13:00.453386+00:00 heroku[router]: at=info method=GET path="/play" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=ff415c41-7440-4d51-943c-cf1c505310c3 fwd="143.109.189.141" dyno=web.1 connect=0ms service=8ms status=200 bytes=13283 protocol=https
+2025-03-02T16:13:00.531661+00:00 app[web.1]: [0mGET /images/ui/easy_clue.png [32m200[0m 0.638 ms - 6229[0m
+2025-03-02T16:13:00.532021+00:00 heroku[router]: at=info method=GET path="/images/ui/easy_clue.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=665c72ea-ff4a-481d-93f0-0f03c8cec7e2 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=200 bytes=6551 protocol=https
+2025-03-02T16:13:00.537824+00:00 app[web.1]: [0mGET /css/main.css [36m304[0m 0.215 ms - -[0m
+2025-03-02T16:13:00.538084+00:00 heroku[router]: at=info method=GET path="/css/main.css" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=87b6f0bf-931f-4d7a-ab9c-c9b57445f16e fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:00.538967+00:00 app[web.1]: [0mGET /images/ui/beginner_clue.png [36m304[0m 0.325 ms - -[0m
+2025-03-02T16:13:00.539308+00:00 heroku[router]: at=info method=GET path="/images/ui/beginner_clue.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=35105b1e-052f-49f7-8741-45f150f1dd6a fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:00.540303+00:00 app[web.1]: [0mGET /images/ui/clue_scroll.png [36m304[0m 0.436 ms - -[0m
+2025-03-02T16:13:00.540693+00:00 app[web.1]: [0mGET /images/ui/medium_clue.png [32m200[0m 1.067 ms - 6229[0m
+2025-03-02T16:13:00.540716+00:00 heroku[router]: at=info method=GET path="/images/ui/clue_scroll.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=f1a550f7-d861-4880-b0f3-713090e56cdd fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:00.541118+00:00 heroku[router]: at=info method=GET path="/images/ui/medium_clue.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=c8c100f3-d289-43c8-ab39-af47d04a3681 fwd="143.109.189.141" dyno=web.1 connect=0ms service=2ms status=200 bytes=6551 protocol=https
+2025-03-02T16:13:00.595347+00:00 app[web.1]: [0mGET /js/auth.js [36m304[0m 0.303 ms - -[0m
+2025-03-02T16:13:00.595676+00:00 heroku[router]: at=info method=GET path="/js/auth.js" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=8873d680-8f20-49d0-9e2b-ecf5836ef630 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:00.612407+00:00 app[web.1]: [0mGET /images/ui/hard_clue.png [32m200[0m 1.249 ms - 6229[0m
+2025-03-02T16:13:00.612730+00:00 app[web.1]: [0mGET /js/game.js [32m200[0m 1.122 ms - 12758[0m
+2025-03-02T16:13:00.612877+00:00 heroku[router]: at=info method=GET path="/images/ui/hard_clue.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=71e87c4b-a405-4dc6-a23d-62307ee330ec fwd="143.109.189.141" dyno=web.1 connect=1ms service=2ms status=200 bytes=6551 protocol=https
+2025-03-02T16:13:00.613106+00:00 heroku[router]: at=info method=GET path="/js/game.js" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=abed5c8b-078d-4411-8f9b-3637e6a81482 fwd="143.109.189.141" dyno=web.1 connect=0ms service=2ms status=200 bytes=13094 protocol=https
+2025-03-02T16:13:00.614240+00:00 app[web.1]: [0mGET /images/ui/elite_clue.png [32m200[0m 1.023 ms - 6229[0m
+2025-03-02T16:13:00.614409+00:00 heroku[router]: at=info method=GET path="/images/ui/elite_clue.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=bef7d233-41d2-4b4e-b556-3673afc35a1f fwd="143.109.189.141" dyno=web.1 connect=0ms service=2ms status=200 bytes=6551 protocol=https
+2025-03-02T16:13:00.615150+00:00 app[web.1]: [0mGET /images/ui/master_clue.png [32m200[0m 0.366 ms - 6229[0m
+2025-03-02T16:13:00.615789+00:00 heroku[router]: at=info method=GET path="/images/ui/master_clue.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=8b081d2f-67a1-4275-8f74-3dfe2359ab5c fwd="143.109.189.141" dyno=web.1 connect=0ms service=2ms status=200 bytes=6551 protocol=https
+2025-03-02T16:13:00.653931+00:00 app[web.1]: [0mGET /images/items/dragon_scimitar.png [32m200[0m 0.586 ms - 6229[0m
+2025-03-02T16:13:00.654298+00:00 heroku[router]: at=info method=GET path="/images/items/dragon_scimitar.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=1d31ba1f-1f22-4ae4-bad2-deb50d08a505 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=200 bytes=6551 protocol=https
+2025-03-02T16:13:00.659655+00:00 app[web.1]: [0mGET /images/ui/xp_orb.png [32m200[0m 0.445 ms - 6229[0m
+2025-03-02T16:13:00.660167+00:00 heroku[router]: at=info method=GET path="/images/ui/xp_orb.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=603fe1b4-c9fc-46f5-b4b4-544a9e7984bd fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=200 bytes=6551 protocol=https
+2025-03-02T16:13:00.684526+00:00 app[web.1]: [0mGET /images/ui/xp_lamp.png [36m304[0m 0.391 ms - -[0m
+2025-03-02T16:13:00.684849+00:00 heroku[router]: at=info method=GET path="/images/ui/xp_lamp.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=76c8f248-7083-45cd-a14c-9d11de33d821 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:00.687917+00:00 app[web.1]: [0mGET /images/ui/correct_icon.png [32m200[0m 0.895 ms - 6229[0m
+2025-03-02T16:13:00.688330+00:00 app[web.1]: [0mGET /images/ui/incorrect_icon.png [32m200[0m 0.945 ms - 6229[0m
+2025-03-02T16:13:00.688353+00:00 heroku[router]: at=info method=GET path="/images/ui/correct_icon.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=433bcc50-96f2-4fce-8ff3-43c50daa5736 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=200 bytes=6551 protocol=https
+2025-03-02T16:13:00.688490+00:00 heroku[router]: at=info method=GET path="/images/ui/incorrect_icon.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=e84be440-f55f-4962-ba01-88d0caf76ac9 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=200 bytes=6551 protocol=https
+2025-03-02T16:13:00.690947+00:00 app[web.1]: [0mGET /css/mobile.css [36m304[0m 0.156 ms - -[0m
+2025-03-02T16:13:00.691495+00:00 heroku[router]: at=info method=GET path="/css/mobile.css" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=2ff62137-25b1-41d3-8003-c63825f6750b fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=269 protocol=https
+2025-03-02T16:13:00.767136+00:00 app[web.1]: [0mGET /images/ui/clue_scroll.png [36m304[0m 0.733 ms - -[0m
+2025-03-02T16:13:00.767616+00:00 heroku[router]: at=info method=GET path="/images/ui/clue_scroll.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=3c09d953-1a6d-4555-ae64-abb67d6c486a fwd="143.109.189.141" dyno=web.1 connect=0ms service=2ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.684772+00:00 app[web.1]: [0mGET / [36m304[0m 0.276 ms - -[0m
+2025-03-02T16:13:04.685141+00:00 heroku[router]: at=info method=GET path="/" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=1429cfdd-309b-4e05-8fcd-511094cb712e fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.762567+00:00 app[web.1]: [0mGET /images/ui/treasure_trail.png [36m304[0m 0.582 ms - -[0m
+2025-03-02T16:13:04.762924+00:00 heroku[router]: at=info method=GET path="/images/ui/treasure_trail.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=b8450733-aeef-4d69-8094-6804d0c7f75b fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.763023+00:00 app[web.1]: [0mGET /images/ui/xp_lamp.png [36m304[0m 0.680 ms - -[0m
+2025-03-02T16:13:04.763543+00:00 heroku[router]: at=info method=GET path="/images/ui/xp_lamp.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=8c07fde2-0355-4e6d-a87a-b8949aa49d41 fwd="143.109.189.141" dyno=web.1 connect=0ms service=2ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.769130+00:00 app[web.1]: [0mGET /css/main.css [36m304[0m 0.183 ms - -[0m
+2025-03-02T16:13:04.769554+00:00 heroku[router]: at=info method=GET path="/css/main.css" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=81241857-7687-4ec5-9c72-af05461c9a75 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.770327+00:00 app[web.1]: [0mGET /images/ui/wise_old_man.png [36m304[0m 0.248 ms - -[0m
+2025-03-02T16:13:04.770551+00:00 heroku[router]: at=info method=GET path="/images/ui/wise_old_man.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=5d9dd203-0771-4d6d-9a12-a701c4c17c5d fwd="143.109.189.141" dyno=web.1 connect=0ms service=0ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.771032+00:00 app[web.1]: [0mGET /images/ui/beginner_clue.png [36m304[0m 0.255 ms - -[0m
+2025-03-02T16:13:04.771433+00:00 heroku[router]: at=info method=GET path="/images/ui/beginner_clue.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=7c184108-2bf0-42eb-a3e1-fae8600812f0 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.772141+00:00 app[web.1]: [0mGET /images/ui/clue_scroll.png [36m304[0m 0.254 ms - -[0m
+2025-03-02T16:13:04.772409+00:00 heroku[router]: at=info method=GET path="/images/ui/clue_scroll.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=10700e3f-151e-491f-a5b4-502ec33b6ce3 fwd="143.109.189.141" dyno=web.1 connect=0ms service=0ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.826335+00:00 app[web.1]: [0mGET /js/auth.js [36m304[0m 0.333 ms - -[0m
+2025-03-02T16:13:04.826764+00:00 heroku[router]: at=info method=GET path="/js/auth.js" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=c967d2a5-8923-417b-ab47-b1157f58b392 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.827392+00:00 app[web.1]: [0mGET /js/main.js [36m304[0m 0.269 ms - -[0m
+2025-03-02T16:13:04.827911+00:00 heroku[router]: at=info method=GET path="/js/main.js" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=cc1cbbfb-ea8f-46a6-858d-0e4fe11aa9d9 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.842922+00:00 app[web.1]: [0mGET /css/mobile.css [36m304[0m 0.199 ms - -[0m
+2025-03-02T16:13:04.843281+00:00 heroku[router]: at=info method=GET path="/css/mobile.css" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=9a71fe87-957e-4100-855c-255529befb98 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=269 protocol=https
+2025-03-02T16:13:04.918328+00:00 app[web.1]: [0mGET /images/ui/clue_scroll.png [36m304[0m 0.362 ms - -[0m
+2025-03-02T16:13:04.918742+00:00 heroku[router]: at=info method=GET path="/images/ui/clue_scroll.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=22ca4610-c076-4c76-a0c5-b6ac5f64e86d fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:06.042368+00:00 app[web.1]: [0mGET /leaderboard [32m200[0m 0.852 ms - 5870[0m
+2025-03-02T16:13:06.042748+00:00 heroku[router]: at=info method=GET path="/leaderboard" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=9d93c3d9-0b61-4bb3-8a9b-fe40b3949277 fwd="143.109.189.141" dyno=web.1 connect=0ms service=2ms status=200 bytes=6192 protocol=https
+2025-03-02T16:13:06.121448+00:00 app[web.1]: [0mGET /js/leaderboard.js [32m200[0m 1.191 ms - 6655[0m
+2025-03-02T16:13:06.121773+00:00 heroku[router]: at=info method=GET path="/js/leaderboard.js" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=7abea952-083b-45d0-949b-4aafe892845a fwd="143.109.189.141" dyno=web.1 connect=0ms service=2ms status=200 bytes=6990 protocol=https
+2025-03-02T16:13:06.121902+00:00 app[web.1]: [0mGET /images/ui/clue_scroll.png [36m304[0m 1.047 ms - -[0m
+2025-03-02T16:13:06.122291+00:00 heroku[router]: at=info method=GET path="/images/ui/clue_scroll.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=e6365c17-a558-4e85-87f6-500bfe5ab9d8 fwd="143.109.189.141" dyno=web.1 connect=0ms service=2ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:06.127706+00:00 app[web.1]: [0mGET /css/main.css [36m304[0m 0.232 ms - -[0m
+2025-03-02T16:13:06.128138+00:00 heroku[router]: at=info method=GET path="/css/main.css" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=b6244ea6-d0f7-41c5-af20-5b3a50279dbd fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:06.129031+00:00 app[web.1]: [0mGET /css/mobile.css [36m304[0m 0.289 ms - -[0m
+2025-03-02T16:13:06.129169+00:00 heroku[router]: at=info method=GET path="/css/mobile.css" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=5a73d071-d5c9-45bb-873c-5d6556643bad fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=269 protocol=https
+2025-03-02T16:13:06.129693+00:00 app[web.1]: [0mGET /js/auth.js [36m304[0m 0.193 ms - -[0m
+2025-03-02T16:13:06.130022+00:00 heroku[router]: at=info method=GET path="/js/auth.js" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=ddc2eb4e-76f4-4e0d-98d5-ab720092ccc0 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:06.214978+00:00 app[web.1]: [0mGET /images/ui/clue_scroll.png [36m304[0m 0.341 ms - -[0m
+2025-03-02T16:13:06.215394+00:00 heroku[router]: at=info method=GET path="/images/ui/clue_scroll.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=9e6e8d20-4d04-492e-b556-6f63c77f2819 fwd="143.109.189.141" dyno=web.1 connect=0ms service=4ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:15.807466+00:00 app[web.1]: Error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2025-03-02T16:13:15.814211+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/api/leaderboard?timeframe=all-time&sortBy=xp" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=739def0e-56ac-4288-bca5-9c1deeb17f64 fwd="143.109.189.141" dyno=web.1 connect=0ms service=9605ms status=503 bytes=0 protocol=https
+2025-03-02T16:13:15.855191+00:00 heroku[web.1]: Process exited with status 1
+2025-03-02T16:13:15.881329+00:00 heroku[web.1]: State changed from up to crashed
+2025-03-02T16:13:40.590364+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/auth/register" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=a2b17e75-b4e2-4733-bf20-311f23ba6885 fwd="143.109.189.141" dyno= connect= service= status=503 bytes= protocol=https
+2025-03-02T16:13:46.647934+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=9ae01c0f-2c65-4364-bb61-95bc5b1213e5 fwd="143.109.189.141" dyno= connect= service= status=503 bytes= protocol=https
+2025-03-02T16:13:46.735872+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=aece7f44-189f-4b26-8d0c-125cf0653620 fwd="143.109.189.141" dyno= connect= service= status=503 bytes= protocol=https
+2025-03-02T16:13:51.070239+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=dc2690b1-a039-4d42-9c36-e702556f5ad1 fwd="143.109.189.141" dyno= connect= service= status=503 bytes= protocol=https
+2025-03-02T16:13:51.154471+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=05f56a1e-f0a9-4685-be3f-a8c2fb5a6e32 fwd="143.109.189.141" dyno= connect= service= status=503 bytes= protocol=https
