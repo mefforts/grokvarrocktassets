@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    // For development, using local MongoDB
-    const conn = await mongoose.connect('mongodb://localhost:27017/osrs-trivia', {
+    // Use environment variable for MongoDB URI in production, fallback to local for development
+    const conn = await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/osrs-trivia', {
       useNewUrlParser: true,
       useUnifiedTopology: true
     });
