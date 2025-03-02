@@ -1,0 +1,100 @@
+2025-03-02T16:13:00.684849+00:00 heroku[router]: at=info method=GET path="/images/ui/xp_lamp.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=76c8f248-7083-45cd-a14c-9d11de33d821 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:00.687917+00:00 app[web.1]: [0mGET /images/ui/correct_icon.png [32m200[0m 0.895 ms - 6229[0m
+2025-03-02T16:13:00.688330+00:00 app[web.1]: [0mGET /images/ui/incorrect_icon.png [32m200[0m 0.945 ms - 6229[0m
+2025-03-02T16:13:00.688353+00:00 heroku[router]: at=info method=GET path="/images/ui/correct_icon.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=433bcc50-96f2-4fce-8ff3-43c50daa5736 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=200 bytes=6551 protocol=https
+2025-03-02T16:13:00.688490+00:00 heroku[router]: at=info method=GET path="/images/ui/incorrect_icon.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=e84be440-f55f-4962-ba01-88d0caf76ac9 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=200 bytes=6551 protocol=https
+2025-03-02T16:13:00.690947+00:00 app[web.1]: [0mGET /css/mobile.css [36m304[0m 0.156 ms - -[0m
+2025-03-02T16:13:00.691495+00:00 heroku[router]: at=info method=GET path="/css/mobile.css" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=2ff62137-25b1-41d3-8003-c63825f6750b fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=269 protocol=https
+2025-03-02T16:13:00.767136+00:00 app[web.1]: [0mGET /images/ui/clue_scroll.png [36m304[0m 0.733 ms - -[0m
+2025-03-02T16:13:00.767616+00:00 heroku[router]: at=info method=GET path="/images/ui/clue_scroll.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=3c09d953-1a6d-4555-ae64-abb67d6c486a fwd="143.109.189.141" dyno=web.1 connect=0ms service=2ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.684772+00:00 app[web.1]: [0mGET / [36m304[0m 0.276 ms - -[0m
+2025-03-02T16:13:04.685141+00:00 heroku[router]: at=info method=GET path="/" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=1429cfdd-309b-4e05-8fcd-511094cb712e fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.762567+00:00 app[web.1]: [0mGET /images/ui/treasure_trail.png [36m304[0m 0.582 ms - -[0m
+2025-03-02T16:13:04.762924+00:00 heroku[router]: at=info method=GET path="/images/ui/treasure_trail.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=b8450733-aeef-4d69-8094-6804d0c7f75b fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.763023+00:00 app[web.1]: [0mGET /images/ui/xp_lamp.png [36m304[0m 0.680 ms - -[0m
+2025-03-02T16:13:04.763543+00:00 heroku[router]: at=info method=GET path="/images/ui/xp_lamp.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=8c07fde2-0355-4e6d-a87a-b8949aa49d41 fwd="143.109.189.141" dyno=web.1 connect=0ms service=2ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.769130+00:00 app[web.1]: [0mGET /css/main.css [36m304[0m 0.183 ms - -[0m
+2025-03-02T16:13:04.769554+00:00 heroku[router]: at=info method=GET path="/css/main.css" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=81241857-7687-4ec5-9c72-af05461c9a75 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.770327+00:00 app[web.1]: [0mGET /images/ui/wise_old_man.png [36m304[0m 0.248 ms - -[0m
+2025-03-02T16:13:04.770551+00:00 heroku[router]: at=info method=GET path="/images/ui/wise_old_man.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=5d9dd203-0771-4d6d-9a12-a701c4c17c5d fwd="143.109.189.141" dyno=web.1 connect=0ms service=0ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.771032+00:00 app[web.1]: [0mGET /images/ui/beginner_clue.png [36m304[0m 0.255 ms - -[0m
+2025-03-02T16:13:04.771433+00:00 heroku[router]: at=info method=GET path="/images/ui/beginner_clue.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=7c184108-2bf0-42eb-a3e1-fae8600812f0 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.772141+00:00 app[web.1]: [0mGET /images/ui/clue_scroll.png [36m304[0m 0.254 ms - -[0m
+2025-03-02T16:13:04.772409+00:00 heroku[router]: at=info method=GET path="/images/ui/clue_scroll.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=10700e3f-151e-491f-a5b4-502ec33b6ce3 fwd="143.109.189.141" dyno=web.1 connect=0ms service=0ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.826335+00:00 app[web.1]: [0mGET /js/auth.js [36m304[0m 0.333 ms - -[0m
+2025-03-02T16:13:04.826764+00:00 heroku[router]: at=info method=GET path="/js/auth.js" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=c967d2a5-8923-417b-ab47-b1157f58b392 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.827392+00:00 app[web.1]: [0mGET /js/main.js [36m304[0m 0.269 ms - -[0m
+2025-03-02T16:13:04.827911+00:00 heroku[router]: at=info method=GET path="/js/main.js" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=cc1cbbfb-ea8f-46a6-858d-0e4fe11aa9d9 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:04.842922+00:00 app[web.1]: [0mGET /css/mobile.css [36m304[0m 0.199 ms - -[0m
+2025-03-02T16:13:04.843281+00:00 heroku[router]: at=info method=GET path="/css/mobile.css" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=9a71fe87-957e-4100-855c-255529befb98 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=269 protocol=https
+2025-03-02T16:13:04.918328+00:00 app[web.1]: [0mGET /images/ui/clue_scroll.png [36m304[0m 0.362 ms - -[0m
+2025-03-02T16:13:04.918742+00:00 heroku[router]: at=info method=GET path="/images/ui/clue_scroll.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=22ca4610-c076-4c76-a0c5-b6ac5f64e86d fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:06.042368+00:00 app[web.1]: [0mGET /leaderboard [32m200[0m 0.852 ms - 5870[0m
+2025-03-02T16:13:06.042748+00:00 heroku[router]: at=info method=GET path="/leaderboard" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=9d93c3d9-0b61-4bb3-8a9b-fe40b3949277 fwd="143.109.189.141" dyno=web.1 connect=0ms service=2ms status=200 bytes=6192 protocol=https
+2025-03-02T16:13:06.121448+00:00 app[web.1]: [0mGET /js/leaderboard.js [32m200[0m 1.191 ms - 6655[0m
+2025-03-02T16:13:06.121773+00:00 heroku[router]: at=info method=GET path="/js/leaderboard.js" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=7abea952-083b-45d0-949b-4aafe892845a fwd="143.109.189.141" dyno=web.1 connect=0ms service=2ms status=200 bytes=6990 protocol=https
+2025-03-02T16:13:06.121902+00:00 app[web.1]: [0mGET /images/ui/clue_scroll.png [36m304[0m 1.047 ms - -[0m
+2025-03-02T16:13:06.122291+00:00 heroku[router]: at=info method=GET path="/images/ui/clue_scroll.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=e6365c17-a558-4e85-87f6-500bfe5ab9d8 fwd="143.109.189.141" dyno=web.1 connect=0ms service=2ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:06.127706+00:00 app[web.1]: [0mGET /css/main.css [36m304[0m 0.232 ms - -[0m
+2025-03-02T16:13:06.128138+00:00 heroku[router]: at=info method=GET path="/css/main.css" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=b6244ea6-d0f7-41c5-af20-5b3a50279dbd fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:06.129031+00:00 app[web.1]: [0mGET /css/mobile.css [36m304[0m 0.289 ms - -[0m
+2025-03-02T16:13:06.129169+00:00 heroku[router]: at=info method=GET path="/css/mobile.css" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=5a73d071-d5c9-45bb-873c-5d6556643bad fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=269 protocol=https
+2025-03-02T16:13:06.129693+00:00 app[web.1]: [0mGET /js/auth.js [36m304[0m 0.193 ms - -[0m
+2025-03-02T16:13:06.130022+00:00 heroku[router]: at=info method=GET path="/js/auth.js" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=ddc2eb4e-76f4-4e0d-98d5-ab720092ccc0 fwd="143.109.189.141" dyno=web.1 connect=0ms service=1ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:06.214978+00:00 app[web.1]: [0mGET /images/ui/clue_scroll.png [36m304[0m 0.341 ms - -[0m
+2025-03-02T16:13:06.215394+00:00 heroku[router]: at=info method=GET path="/images/ui/clue_scroll.png" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=9e6e8d20-4d04-492e-b556-6f63c77f2819 fwd="143.109.189.141" dyno=web.1 connect=0ms service=4ms status=304 bytes=270 protocol=https
+2025-03-02T16:13:15.807466+00:00 app[web.1]: Error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2025-03-02T16:13:15.814211+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/api/leaderboard?timeframe=all-time&sortBy=xp" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=739def0e-56ac-4288-bca5-9c1deeb17f64 fwd="143.109.189.141" dyno=web.1 connect=0ms service=9605ms status=503 bytes=0 protocol=https
+2025-03-02T16:13:15.855191+00:00 heroku[web.1]: Process exited with status 1
+2025-03-02T16:13:15.881329+00:00 heroku[web.1]: State changed from up to crashed
+2025-03-02T16:13:40.590364+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/auth/register" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=a2b17e75-b4e2-4733-bf20-311f23ba6885 fwd="143.109.189.141" dyno= connect= service= status=503 bytes= protocol=https
+2025-03-02T16:13:46.647934+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=9ae01c0f-2c65-4364-bb61-95bc5b1213e5 fwd="143.109.189.141" dyno= connect= service= status=503 bytes= protocol=https
+2025-03-02T16:13:46.735872+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=aece7f44-189f-4b26-8d0c-125cf0653620 fwd="143.109.189.141" dyno= connect= service= status=503 bytes= protocol=https
+2025-03-02T16:13:51.070239+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=dc2690b1-a039-4d42-9c36-e702556f5ad1 fwd="143.109.189.141" dyno= connect= service= status=503 bytes= protocol=https
+2025-03-02T16:13:51.154471+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=05f56a1e-f0a9-4685-be3f-a8c2fb5a6e32 fwd="143.109.189.141" dyno= connect= service= status=503 bytes= protocol=https
+2025-03-02T16:14:53.639311+00:00 heroku[web.1]: State changed from crashed to starting
+2025-03-02T16:14:56.066833+00:00 heroku[web.1]: Starting process with command `node server.js`
+2025-03-02T16:14:56.821955+00:00 app[web.1]: Server running at http://localhost:26714
+2025-03-02T16:14:57.136628+00:00 heroku[web.1]: State changed from starting to up
+2025-03-02T16:15:26.859166+00:00 app[web.1]: Error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2025-03-02T16:15:26.903079+00:00 heroku[web.1]: Process exited with status 1
+2025-03-02T16:15:26.924168+00:00 heroku[web.1]: State changed from up to crashed
+2025-03-02T16:25:52.142623+00:00 heroku[web.1]: State changed from crashed to starting
+2025-03-02T16:25:54.594372+00:00 heroku[web.1]: Starting process with command `node server.js`
+2025-03-02T16:25:55.378278+00:00 app[web.1]: Server running at http://localhost:54391
+2025-03-02T16:25:55.785069+00:00 heroku[web.1]: State changed from starting to up
+2025-03-02T16:26:25.416633+00:00 app[web.1]: Error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2025-03-02T16:26:25.457284+00:00 heroku[web.1]: Process exited with status 1
+2025-03-02T16:26:25.479770+00:00 heroku[web.1]: State changed from up to crashed
+2025-03-02T16:28:22.000000+00:00 app[api]: Build started by user bradtpr@gmail.com
+2025-03-02T16:28:39.915992+00:00 app[api]: Deploy c0ff0b15 by user bradtpr@gmail.com
+2025-03-02T16:28:39.915992+00:00 app[api]: Release v18 created by user bradtpr@gmail.com
+2025-03-02T16:28:40.000000+00:00 app[api]: Build succeeded
+2025-03-02T16:28:40.115485+00:00 heroku[web.1]: State changed from crashed to starting
+2025-03-02T16:28:42.599819+00:00 heroku[web.1]: Starting process with command `node server.js`
+2025-03-02T16:28:43.147959+00:00 app[web.1]: node:internal/modules/cjs/loader:1408
+2025-03-02T16:28:43.147969+00:00 app[web.1]: throw err;
+2025-03-02T16:28:43.147970+00:00 app[web.1]: ^
+2025-03-02T16:28:43.147970+00:00 app[web.1]: 
+2025-03-02T16:28:43.147989+00:00 app[web.1]: Error: Cannot find module './server/db/db-connection'
+2025-03-02T16:28:43.147990+00:00 app[web.1]: Require stack:
+2025-03-02T16:28:43.147990+00:00 app[web.1]: - /app/server.js
+2025-03-02T16:28:43.147991+00:00 app[web.1]: at Function._resolveFilename (node:internal/modules/cjs/loader:1405:15)
+2025-03-02T16:28:43.147991+00:00 app[web.1]: at defaultResolveImpl (node:internal/modules/cjs/loader:1061:19)
+2025-03-02T16:28:43.147991+00:00 app[web.1]: at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1066:22)
+2025-03-02T16:28:43.147992+00:00 app[web.1]: at Function._load (node:internal/modules/cjs/loader:1215:37)
+2025-03-02T16:28:43.147992+00:00 app[web.1]: at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-03-02T16:28:43.147993+00:00 app[web.1]: at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+2025-03-02T16:28:43.147993+00:00 app[web.1]: at Module.require (node:internal/modules/cjs/loader:1491:12)
+2025-03-02T16:28:43.147993+00:00 app[web.1]: at require (node:internal/modules/helpers:135:16)
+2025-03-02T16:28:43.147994+00:00 app[web.1]: at Object.<anonymous> (/app/server.js:4:19)
+2025-03-02T16:28:43.147994+00:00 app[web.1]: at Module._compile (node:internal/modules/cjs/loader:1734:14) {
+2025-03-02T16:28:43.147994+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2025-03-02T16:28:43.147995+00:00 app[web.1]: requireStack: [ '/app/server.js' ]
+2025-03-02T16:28:43.147995+00:00 app[web.1]: }
+2025-03-02T16:28:43.147995+00:00 app[web.1]: 
+2025-03-02T16:28:43.147995+00:00 app[web.1]: Node.js v23.9.0
+2025-03-02T16:28:43.193378+00:00 heroku[web.1]: Process exited with status 1
+2025-03-02T16:28:43.218029+00:00 heroku[web.1]: State changed from starting to crashed
+2025-03-02T16:28:45.904310+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=768d9a03-435a-4643-bf90-f4596ff0f791 fwd="143.109.189.141" dyno= connect= service= status=503 bytes= protocol=https
+2025-03-02T16:28:46.001113+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=70514ed9-201f-4b35-8b84-1cd03544bb67 fwd="143.109.189.141" dyno= connect= service= status=503 bytes= protocol=https

@@ -1,27 +1,18 @@
-// server/middleware/auth.js
-const jwt = require('jsonwebtoken');
-require('dotenv').config();
+// server/middleware/database.js
+const mongoose = require('mongoose');
 
-// JWT secret key - should be in environment variable in production
-const JWT_SECRET = process.env.JWT_SECRET;
-
-module.exports = function(req, res, next) {
-  // Get token from header
-  const token = req.header('x-auth-token');
-  
-  // Check if no token
-  if (!token) {
-    return res.status(401).json({ message: 'No token, authorization denied' });
+// Middleware to check database connection
+const checkDatabaseConnection = (req, res, next) => {
+  if (mongoose.connection.readyState !== 1) {
+    if (req.path.startsWith('/api') || req.path.startsWith('/auth')) {
+      return res.status(503).json({
+        message: 'Database temporarily unavailable',
+        error: 'Please try again later'
+      });
+    }
+    // For static pages, just continue
   }
-  
-  try {
-    // Verify token
-    const decoded = jwt.verify(token, JWT_SECRET);
-    
-    // Add user from payload to request
-    req.user = decoded.user;
-    next();
-  } catch (err) {
-    res.status(401).json({ message: 'Token is not valid' });
-  }
+  next();
 };
+
+module.exports = checkDatabaseConnection;

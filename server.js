@@ -1,7 +1,9 @@
+// server.js
 require('dotenv').config();
 const express = require('express');
 const path = require('path');
-const connectDB = require('./server/db/db-connection'); 
+const mongoose = require('mongoose');
+const connectDB = require('./server/db/index');
 const cors = require('cors');
 const morgan = require('morgan');
 
@@ -14,8 +16,11 @@ const pageRoutes = require('./server/routes/pages');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Connect to database
-connectDB();
+// Connect to database (but don't crash if connection fails)
+connectDB().catch(err => {
+  console.error('Database connection failed:', err.message);
+  console.log('App will continue without database functionality');
+});
 
 // Middleware
 app.use(cors());
@@ -25,6 +30,10 @@ app.use(morgan('dev')); // Request logging
 
 // Serve static files from the 'public' folder
 app.use(express.static(path.join(__dirname, 'public')));
+
+// Import and use database connection check middleware
+const checkDatabaseConnection = require('./server/middleware/database');
+app.use(checkDatabaseConnection);
 
 // Routes
 app.use('/api', apiRoutes);
