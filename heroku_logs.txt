@@ -1,0 +1,100 @@
+2025-03-02T12:12:34.315103+00:00 app[web.1]: at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+2025-03-02T12:12:34.315103+00:00 app[web.1]: at Module.require (node:internal/modules/cjs/loader:1491:12)
+2025-03-02T12:12:34.315103+00:00 app[web.1]: at require (node:internal/modules/helpers:135:16)
+2025-03-02T12:12:34.315104+00:00 app[web.1]: at Object.<anonymous> (/app/server/routes/api.js:5:14)
+2025-03-02T12:12:34.315104+00:00 app[web.1]: at Module._compile (node:internal/modules/cjs/loader:1734:14) {
+2025-03-02T12:12:34.315104+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2025-03-02T12:12:34.315104+00:00 app[web.1]: requireStack: [ '/app/server/routes/api.js', '/app/server.js' ]
+2025-03-02T12:12:34.315104+00:00 app[web.1]: }
+2025-03-02T12:12:34.315104+00:00 app[web.1]: 
+2025-03-02T12:12:34.315105+00:00 app[web.1]: Node.js v23.9.0
+2025-03-02T12:12:34.376268+00:00 heroku[web.1]: Process exited with status 1
+2025-03-02T12:12:34.396486+00:00 heroku[web.1]: State changed from starting to crashed
+2025-03-02T15:32:44.650928+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=0dcd6ec1-2217-4820-af51-342663902b5e fwd="143.109.189.141" dyno= connect= service= status=503 bytes= protocol=https
+2025-03-02T15:32:44.868955+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=8c9dc57d-b90e-43b2-9394-c3c3ac06b21c fwd="143.109.189.141" dyno= connect= service= status=503 bytes= protocol=https
+2025-03-02T15:52:18.000000+00:00 app[api]: Build started by user bradtpr@gmail.com
+2025-03-02T15:52:37.000000+00:00 app[api]: Build succeeded
+2025-03-02T15:52:37.050903+00:00 app[api]: Deploy 7a789431 by user bradtpr@gmail.com
+2025-03-02T15:52:37.050903+00:00 app[api]: Release v14 created by user bradtpr@gmail.com
+2025-03-02T15:52:37.270676+00:00 heroku[web.1]: State changed from crashed to starting
+2025-03-02T15:52:40.224825+00:00 heroku[web.1]: Starting process with command `node server.js`
+2025-03-02T15:52:41.250816+00:00 app[web.1]: node:internal/modules/cjs/loader:1408
+2025-03-02T15:52:41.250863+00:00 app[web.1]: throw err;
+2025-03-02T15:52:41.250863+00:00 app[web.1]: ^
+2025-03-02T15:52:41.250863+00:00 app[web.1]: 
+2025-03-02T15:52:41.250864+00:00 app[web.1]: Error: Cannot find module '../db/models/User'
+2025-03-02T15:52:41.250864+00:00 app[web.1]: Require stack:
+2025-03-02T15:52:41.250864+00:00 app[web.1]: - /app/server/routes/api.js
+2025-03-02T15:52:41.250865+00:00 app[web.1]: - /app/server.js
+2025-03-02T15:52:41.250865+00:00 app[web.1]: at Function._resolveFilename (node:internal/modules/cjs/loader:1405:15)
+2025-03-02T15:52:41.250866+00:00 app[web.1]: at defaultResolveImpl (node:internal/modules/cjs/loader:1061:19)
+2025-03-02T15:52:41.250866+00:00 app[web.1]: at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1066:22)
+2025-03-02T15:52:41.250866+00:00 app[web.1]: at Function._load (node:internal/modules/cjs/loader:1215:37)
+2025-03-02T15:52:41.250867+00:00 app[web.1]: at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-03-02T15:52:41.250867+00:00 app[web.1]: at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+2025-03-02T15:52:41.250867+00:00 app[web.1]: at Module.require (node:internal/modules/cjs/loader:1491:12)
+2025-03-02T15:52:41.250868+00:00 app[web.1]: at require (node:internal/modules/helpers:135:16)
+2025-03-02T15:52:41.250868+00:00 app[web.1]: at Object.<anonymous> (/app/server/routes/api.js:5:14)
+2025-03-02T15:52:41.250868+00:00 app[web.1]: at Module._compile (node:internal/modules/cjs/loader:1734:14) {
+2025-03-02T15:52:41.250868+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2025-03-02T15:52:41.250869+00:00 app[web.1]: requireStack: [ '/app/server/routes/api.js', '/app/server.js' ]
+2025-03-02T15:52:41.250869+00:00 app[web.1]: }
+2025-03-02T15:52:41.250869+00:00 app[web.1]: 
+2025-03-02T15:52:41.250870+00:00 app[web.1]: Node.js v23.9.0
+2025-03-02T15:52:41.297453+00:00 heroku[web.1]: Process exited with status 1
+2025-03-02T15:52:41.338980+00:00 heroku[web.1]: State changed from starting to crashed
+2025-03-02T15:52:41.342112+00:00 heroku[web.1]: State changed from crashed to starting
+2025-03-02T15:52:43.754631+00:00 heroku[web.1]: Starting process with command `node server.js`
+2025-03-02T15:52:44.454325+00:00 app[web.1]: node:internal/modules/cjs/loader:1408
+2025-03-02T15:52:44.454341+00:00 app[web.1]: throw err;
+2025-03-02T15:52:44.454341+00:00 app[web.1]: ^
+2025-03-02T15:52:44.454342+00:00 app[web.1]: 
+2025-03-02T15:52:44.454342+00:00 app[web.1]: Error: Cannot find module '../db/models/User'
+2025-03-02T15:52:44.454342+00:00 app[web.1]: Require stack:
+2025-03-02T15:52:44.454343+00:00 app[web.1]: - /app/server/routes/api.js
+2025-03-02T15:52:44.454343+00:00 app[web.1]: - /app/server.js
+2025-03-02T15:52:44.454344+00:00 app[web.1]: at Function._resolveFilename (node:internal/modules/cjs/loader:1405:15)
+2025-03-02T15:52:44.454344+00:00 app[web.1]: at defaultResolveImpl (node:internal/modules/cjs/loader:1061:19)
+2025-03-02T15:52:44.454345+00:00 app[web.1]: at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1066:22)
+2025-03-02T15:52:44.454345+00:00 app[web.1]: at Function._load (node:internal/modules/cjs/loader:1215:37)
+2025-03-02T15:52:44.454345+00:00 app[web.1]: at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-03-02T15:52:44.454357+00:00 app[web.1]: at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+2025-03-02T15:52:44.454357+00:00 app[web.1]: at Module.require (node:internal/modules/cjs/loader:1491:12)
+2025-03-02T15:52:44.454358+00:00 app[web.1]: at require (node:internal/modules/helpers:135:16)
+2025-03-02T15:52:44.454358+00:00 app[web.1]: at Object.<anonymous> (/app/server/routes/api.js:5:14)
+2025-03-02T15:52:44.454358+00:00 app[web.1]: at Module._compile (node:internal/modules/cjs/loader:1734:14) {
+2025-03-02T15:52:44.454359+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2025-03-02T15:52:44.454359+00:00 app[web.1]: requireStack: [ '/app/server/routes/api.js', '/app/server.js' ]
+2025-03-02T15:52:44.454359+00:00 app[web.1]: }
+2025-03-02T15:52:44.454360+00:00 app[web.1]: 
+2025-03-02T15:52:44.454360+00:00 app[web.1]: Node.js v23.9.0
+2025-03-02T15:52:44.509868+00:00 heroku[web.1]: Process exited with status 1
+2025-03-02T15:52:44.534262+00:00 heroku[web.1]: State changed from starting to crashed
+2025-03-02T15:52:56.000000+00:00 app[api]: Build started by user bradtpr@gmail.com
+2025-03-02T15:53:13.857912+00:00 app[api]: Release v15 created by user bradtpr@gmail.com
+2025-03-02T15:53:13.857912+00:00 app[api]: Deploy 167737a7 by user bradtpr@gmail.com
+2025-03-02T15:53:14.000000+00:00 app[api]: Build succeeded
+2025-03-02T15:53:14.059357+00:00 heroku[web.1]: State changed from crashed to starting
+2025-03-02T15:53:16.601015+00:00 heroku[web.1]: Starting process with command `node server.js`
+2025-03-02T15:53:17.343955+00:00 app[web.1]: /app/server.js:17
+2025-03-02T15:53:17.343976+00:00 app[web.1]: connectDB();
+2025-03-02T15:53:17.343976+00:00 app[web.1]: ^
+2025-03-02T15:53:17.343977+00:00 app[web.1]: 
+2025-03-02T15:53:17.343978+00:00 app[web.1]: TypeError: connectDB is not a function
+2025-03-02T15:53:17.343978+00:00 app[web.1]: at Object.<anonymous> (/app/server.js:17:1)
+2025-03-02T15:53:17.343979+00:00 app[web.1]: at Module._compile (node:internal/modules/cjs/loader:1734:14)
+2025-03-02T15:53:17.343979+00:00 app[web.1]: at Object..js (node:internal/modules/cjs/loader:1899:10)
+2025-03-02T15:53:17.343979+00:00 app[web.1]: at Module.load (node:internal/modules/cjs/loader:1469:32)
+2025-03-02T15:53:17.343979+00:00 app[web.1]: at Function._load (node:internal/modules/cjs/loader:1286:12)
+2025-03-02T15:53:17.343980+00:00 app[web.1]: at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-03-02T15:53:17.343980+00:00 app[web.1]: at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+2025-03-02T15:53:17.343980+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)
+2025-03-02T15:53:17.343980+00:00 app[web.1]: at node:internal/main/run_main_module:33:47
+2025-03-02T15:53:17.343981+00:00 app[web.1]: 
+2025-03-02T15:53:17.343981+00:00 app[web.1]: Node.js v23.9.0
+2025-03-02T15:53:17.395104+00:00 heroku[web.1]: Process exited with status 1
+2025-03-02T15:53:17.421965+00:00 heroku[web.1]: State changed from starting to crashed
+2025-03-02T15:55:30.678445+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=88c84537-697d-4a8f-9f29-4de9d9ff0669 fwd="143.109.189.141" dyno= connect= service= status=503 bytes= protocol=https
+2025-03-02T15:55:30.770052+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=cbbf80c1-5a67-4a01-aedb-6c414c542d22 fwd="143.109.189.141" dyno= connect= service= status=503 bytes= protocol=https
+2025-03-02T15:56:41.246482+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=eee6604b-9a45-4e8b-abdb-ef30c5b5de04 fwd="143.109.189.141" dyno= connect= service= status=503 bytes= protocol=https
+2025-03-02T15:56:41.371431+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=osrs-trivia-dba6e75ff477.herokuapp.com request_id=4dbe66bb-4cb3-41b5-a12b-96477336c69d fwd="143.109.189.141" dyno= connect= service= status=503 bytes= protocol=https
